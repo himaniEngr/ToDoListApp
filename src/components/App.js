@@ -24,15 +24,14 @@ const App = () => {
 
   // return <div>{renderFruits}</div>;
   const addItem = () => {
-    setInputList((oldValues) => {
-      console.log("term", term);
-      if (term != "") {
+    if (term != "") {
+      setInputList((oldValues) => {
         return [...oldValues, term];
-      } else {
-        alert("enter a valid value");
-      }
-    });
-    setTerm("");
+      });
+      setTerm("");
+    } else {
+      alert("empty not alllowed");
+    }
   };
 
   return (
