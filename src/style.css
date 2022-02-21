@@ -1,0 +1,14 @@
+.item {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.delete-button {
+  border-radius: 50%;
+  border: none;
+  background-color: #aaa;
+  color: white;
+}
+.delete-button:hover {
+  background-color: rgb(250, 17, 17);
+}
